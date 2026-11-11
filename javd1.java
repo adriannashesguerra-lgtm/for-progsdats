@@ -6,5 +6,6 @@ public class javd1 {
         String result = score >= 700 ? "wowie" : "hell nahh";
 
         System.out.println ("Result:" + result);
+        System.out.print("hi\ney");
     }
 }
