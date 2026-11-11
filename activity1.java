@@ -4,10 +4,44 @@ public class activity1 {
     public static void main (String [] args){
         Scanner input = new Scanner (System.in);
 
-        for (String string : args) {
-            
+        System.out.print("Enter value of first number: ");
+        double num1 = input.nextDouble();
+
+        System.out.print("Enter value of second number");
+        double num2 = input.nextDouble();
+
+        System.out.print("""
+                \nPick an operator:
+                add = Additition
+                sub = Subtraction
+                mul = Multiplication
+                div = Division
+                """);
+
+        String operator = input.next();
+
+        double ans = 0;
+        boolean validation = true;
+
+
+        if (operator == add){
+            ans = num1 + num2;
+        } else if (operator == "sub"){
+            ans = num1 - num2;
+        } else if (operator == "mul"){
+            ans = num1 * num2;
+        } else if (operator == "div"){
+            ans = num1 / num2;
+        } else{
+            System.out.println("Di pwedeng wala sa choices");
+            validation = false;
         }
-        System.out.println();
+
+
+        if (validation) {
+            System.out.println("Num1:" + num1 + "\nNum2: " + num2 + "\nAnswer: " + ans);
+        }
+        input.close();
     }
 
 
