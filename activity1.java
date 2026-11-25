@@ -10,6 +10,10 @@ public class activity1 {
         System.out.print("Enter value of second number");
         double num2 = input.nextDouble();
 
+        System.out.println();
+
+        
+
         System.out.print("""
                 \nPick an operator:
                 add = Additition
